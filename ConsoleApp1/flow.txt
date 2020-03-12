@@ -1,0 +1,17 @@
+https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/expression-trees/how-to-use-expression-trees-to-build-dynamic-queries
+
+How to use expression trees to build dynamic queries (C#)
+
+====================================
+https://ua.godaddy.com/help/instalyaciya-microsoft-sql-server-express-16624
+
+инсталляция SQL Server 2014	http://download.microsoft.com/download/E/A/E/EAE6F7FC-767A-4038-A954-49B8B05D04EB/ExpressAndTools%2064BIT/SQLEXPRWT_x64_ENU.exe
+
+=========================================
+https://www.linqpad.net/
+
+
+========================================
+https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/expression-trees/how-to-use-expression-trees-to-build-dynamic-queries
+
+How to use expression trees to build dynamic queries (C#)
