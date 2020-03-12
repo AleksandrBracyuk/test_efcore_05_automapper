@@ -1,5 +1,7 @@
-﻿using System;
+﻿using AutoMapper;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 
 namespace ConsoleApp1
@@ -8,6 +10,11 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            var config = new MapperConfiguration(cfg =>
+            cfg.CreateMap<Detail, DetailModel>());
+            var mapper = config.CreateMapper();
+
+
             Console.WriteLine("Hello World!");
 
             using(DbContext db = new DbContext())
@@ -18,8 +25,7 @@ namespace ConsoleApp1
                     Console.WriteLine(detail);
                 }
 
-                Console.WriteLine("======================================");
-
+                Console.WriteLine("======old================================");
                 var target = new List<DetailModel>();
                 foreach (var detail in details)
                 {
@@ -38,14 +44,22 @@ namespace ConsoleApp1
                     };
                     target.Add(detailModel);
                 }
-
-                Console.WriteLine("======================================");
-
                 foreach (var detailModel in target)
                 {
                     Console.WriteLine(detailModel);
                 }
-                Console.WriteLine("======================================");
+                Console.WriteLine("=== new 1 ===================================");
+
+                var target2 = new List<DetailModel>();
+                foreach (var detail in details)
+                {
+                    var detailModel = mapper.Map<DetailModel>(detail);
+                    target2.Add(detailModel);
+                }
+                  foreach (var detailModel in target)
+                {
+                    Console.WriteLine(detailModel);
+                }
             }
 
 

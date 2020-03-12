@@ -1,0 +1,6 @@
+https://itvdn.com/ru/video/aspnet-core-essential/efcore
+КУРС ASP.NET CORE ESSENTIAL
+ВИДЕОУРОК №10. ENTITY FRAMEWORK CORE
+28:40
+
+---------------------
